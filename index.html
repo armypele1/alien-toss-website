@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/alien-head.png" />
+    <link rel="icon" type="image/png" href="alien-head.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
     <title>Alien Toss</title>
@@ -22,7 +22,7 @@
         onclick="changeImage(); toggleTitle()"
       >
         <img
-          src="/open-eye.svg"
+          src="open-eye.svg"
           class="w-8 opacity-40 transition-opacity"
           id="eye"
         />
@@ -31,8 +31,8 @@
         class="flex flex-col items-center justify-center h-screen transition-opacity opacity-100 absolute"
         id="title"
       >
-        <img src="/titleSkewed.png" class="w-60 md:w-96" />
-        <img src="/play-store.png" class="w-48 md:w-60" />
+        <img src="titleSkewed.png" class="w-60 md:w-96" />
+        <img src="play-store.png" class="w-48 md:w-60" />
       </div>
       <div
         class="relative flex items-center justify-center h-screen overflow-hidden"
@@ -56,13 +56,13 @@
       // Get the image element
       var imageElement = document.getElementById("eye");
       console.log(imageElement.src);
-      if (imageElement.src.endsWith("/closed-eye.svg")) {
-        imageElement.src = "/open-eye.svg";
+      if (imageElement.src.endsWith("closed-eye.svg")) {
+        imageElement.src = "open-eye.svg";
         imageElement.classList.add("opacity-40");
         imageElement.classList.remove("opacity-10");
       } else {
         console.log("foo");
-        imageElement.src = "/closed-eye.svg";
+        imageElement.src = "closed-eye.svg";
         imageElement.classList.add("opacity-10");
         imageElement.classList.remove("opacity-40");
       }
