@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/alien-head.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alien Toss</title>
     <link rel="stylesheet" crossorigin href="/assets/index-CwYmGozs.css">
   </head>
@@ -56,13 +56,13 @@
       // Get the image element
       var imageElement = document.getElementById("eye");
       console.log(imageElement.src);
-      if (imageElement.src.endsWith("public/closed-eye.svg")) {
-        imageElement.src = "./public/open-eye.svg";
+      if (imageElement.src.endsWith("/closed-eye.svg")) {
+        imageElement.src = "/open-eye.svg";
         imageElement.classList.add("opacity-40");
         imageElement.classList.remove("opacity-10");
       } else {
         console.log("foo");
-        imageElement.src = "./public/closed-eye.svg";
+        imageElement.src = "/closed-eye.svg";
         imageElement.classList.add("opacity-10");
         imageElement.classList.remove("opacity-40");
       }
